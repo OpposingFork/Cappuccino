@@ -1,0 +1,11 @@
+import random
+tries = 0
+correct = random.randint(1, 1000000000)
+guess = random.randint(1, 1000000000)
+while correct != guess:
+	guess = random.randint(1, 1000000000)
+	tries += 1
+	print(guess)
+else:
+	print("correct guess is " + str(guess))
+	print("it took me " + str(tries) + " tries.")
